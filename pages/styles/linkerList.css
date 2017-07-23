@@ -14,8 +14,18 @@ body{
 #addMail{
 	width:110px;
 	height:20px;
-	background:#CC00FF;
 	float:right;
+	
+}
+
+.contactList:nth-child(odd){
+	background:#CCFFCC;
+	
+
+}
+
+.contactList:nth-child(even){
+	background:#DDCCCC;
 	
 }
 
@@ -41,23 +51,10 @@ body{
 
 #profilePic{
 	width:120px;
-	height:220px;
-	left:80%;
+	height:120px;
+	float:right;
 	position:relative;
 	
 }
-
-.contactList{
-	background:#FF44FF;
-
-
-}
-
-.dataField{
-	background:#33FF33;
-	
-	
-}
-
 
 

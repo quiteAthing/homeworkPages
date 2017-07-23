@@ -17,35 +17,51 @@
 	
 	</head>
 	<body onload="setup()">
-		<div id="mainProFile">
-			<div><img id="profilePic" src="pics/wf.png"></div>
-			<div class="dataField">
-				<span>Name:</span><span>某人</span>
-			</div>			
-			<div class="dataField">
-				<span>Addr:</span><span>某處</span>
-			</div>
-			<div class="dataField">
-				<span>Tel:</span><span>某人</span>
-			</div>			 
-			<div class="dataField">
-				<span>Cellphone:</span><span>某處</span>
-			</div>
-			<div class="dataField">
-				<span>Email:</span><span>某人</span>
-			</div>			
-			<div class="dataField">
-				<span>Note:</span><span>某處</span>
-			</div>
-		</div>
+		<table>
+		
+
+			<tr>
+				<td></td>
+				<td><img id="profilePic" src="pics/wf.png"></td>
+			</tr>
+			<tr>
+				<td>Name: </td>
+				<td>某人</td>
+			</tr>
+			
+			<tr>
+				<td>Tel: </td>
+				<td>(00)0000-0000</td>
+			</tr>
+			
+			<tr>
+				<td>Addr: </td>
+				<td>台灣某處</td>
+			</tr>
+			
+			<tr>
+				<td>Cellphone: </td>
+				<td>0000-000-000</td>
+			</tr>
+			
+			<tr>
+				<td>Email</td>
+				<td>xxx@xxx.xxx</td>
+			</tr>
+			<tr>
+				<td>Note: </td>
+				<td>這是預設資料</td>
+			</tr>
+		
+		</table>
 		
 		<div id="mainContactHolder">
 			<div id="holder">
-				<input type="button" value="增加聯絡人" id="addMail">
+				<input type="button" value="+" id="addMail">
 				<div id="fieldTitle">聯絡人清單</div>
 			</div>
 			<br>
-				<div id="contactListModel">
+				<div id="contactListModel" class="contactList">
 					<div class="infoInput">
 						<span class="nxx_contactNo">
 							姓名: 
@@ -64,7 +80,7 @@
 					<input type="button" id="saveContactInfo" value="儲存聯絡人資料">
 					</div>
 				
-				<div>
+				<div class="contactList">
 					<div class="infoInput">
 						<span class="nxx_contactNo" style="display:none">
 							姓名: 
