@@ -35,7 +35,7 @@ function onFBLogin(response){
 
 function getUserInfo(){
 		FB.api("/"+FB.getAuthResponse().userID,function(rsp){
-		alert(rsp.name+" 您好\n 於本app的id為"+rsp.id);
+		alert(rsp.name+" 您好\n 於本app的id為 \n"+rsp.id);
 	});
 	
 }
