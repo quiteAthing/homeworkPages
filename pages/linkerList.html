@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>客戶連絡清單</title>
+		<meta charset="utf-8">
+		<script src="scripts/jq321min.js"></script>
+		<script src="scripts/linkerList.js"></script>
+		<link	rel="stylesheet" href="styles/linkerList.css">
+		<script>
+			function setup(){
+				console.log("dfee");
+				setupContactInfoModel();
+				setupAddButton();
+			}
+		</script>
+	
+	</head>
+	<body onload="setup()">
+		<div id="mainProFile">
+			<div><img id="profilePic" src="pics/wf.png"></div>
+			<div class="dataField">
+				<span>Name:</span><span>某人</span>
+			</div>			
+			<div class="dataField">
+				<span>Addr:</span><span>某處</span>
+			</div>
+			<div class="dataField">
+				<span>Tel:</span><span>某人</span>
+			</div>			 
+			<div class="dataField">
+				<span>Cellphone:</span><span>某處</span>
+			</div>
+			<div class="dataField">
+				<span>Email:</span><span>某人</span>
+			</div>			
+			<div class="dataField">
+				<span>Note:</span><span>某處</span>
+			</div>
+		</div>
+		
+		<div id="mainContactHolder">
+			<div id="holder">
+				<input type="button" value="增加聯絡人" id="addMail">
+				<div id="fieldTitle">聯絡人清單</div>
+			</div>
+			<br>
+				<div id="contactListModel">
+					<div class="infoInput">
+						<span class="nxx_contactNo">
+							姓名: 
+						</span>
+						<input type="text" class="nxx_inputName">
+						<span>電話:</span>
+						<input type="text" class="nxx_inputTel">
+						<p style="display:none;" class="nxx_serialNo"></p>
+											</div>
+					<div class="infoDisplay" style="display:none">
+						<span>姓名:</span>
+						<span class="nxx_displayName"></span>
+						<span>電話:</span>
+						<span class="nxx_displayTel"></span>
+					</div>
+					<input type="button" id="saveContactInfo" value="儲存聯絡人資料">
+					</div>
+				
+				<div>
+					<div class="infoInput">
+						<span class="nxx_contactNo" style="display:none">
+							姓名: 
+						</span>
+						<input type="text" class="nxx_inputName" style="display:none">
+						<span style="display:none">電話:</span>
+						<input type="text" class="nxx_inputTel" style="display:none">
+						<p style="display:none;" class="nxx_serialNo" style="display:none">1</p>
+											</div>
+					<div class="infoDisplay">
+						<span>姓名:</span>
+						<span class="nxx_displayName">某人</span>
+						<span>電話:</span>
+						<span class="nxx_displayTel">某人的電話號碼</span>
+					</div>
+					<input type="button" style="display:none" id="saveContactInfo" value="儲存聯絡人資料">
+
+					
+				</div>
+		
+		
+		</div>
+	
+	
+	</body>
+
+
+
+
+
+
+</html>

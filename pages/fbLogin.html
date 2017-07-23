@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>fb帳號資料取得</title>
+		<meta charset="utf-8">
+		<script src="scripts/jq321min.js"></script>
+		<script src="scripts/initFB.js"></script>
+		<script src="scripts/loginFB.js"></script>
+		<link	rel="stylesheet" href="styles/fbLogin.css">
+		<script>
+			function setup(){
+				setupLoginWithFB();
+				setupGetFBinfo();
+			
+			}
+		</script>
+	
+	</head>
+	<body onload="setup()">
+	<script>
+		initFb();
+	</script>
+	
+		<div id="loginData">
+			<table>
+				<tr>
+					<td>帳號:</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>密碼:</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="button" id="loginWithFB" value="FB登入">
+					</td>
+				
+				</tr>
+				
+				
+			
+			</table>
+		
+		</div>
+		
+			
+	
+	</body>
+
+
+
+
+
+
+</html>

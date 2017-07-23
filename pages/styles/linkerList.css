@@ -1,0 +1,63 @@
+
+
+body{
+	width:70%;
+	margin:0px auto;
+	
+}
+
+
+#holder{
+	position:relative;
+}
+
+#addMail{
+	width:110px;
+	height:20px;
+	background:#CC00FF;
+	float:right;
+	
+}
+
+#contactListModel{
+	display:none;
+	
+}
+
+#fieldTitle{
+	float:left;
+}
+
+#mainProfile{
+	width:100%;
+	background:#EEEEEE;
+}
+
+
+#mainContactHolder{
+	width:100%;
+	background:#AAEEEE;
+}
+
+#profilePic{
+	width:120px;
+	height:220px;
+	left:80%;
+	position:relative;
+	
+}
+
+.contactList{
+	background:#FF44FF;
+
+
+}
+
+.dataField{
+	background:#33FF33;
+	
+	
+}
+
+
+
