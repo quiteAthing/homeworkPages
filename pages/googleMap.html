@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>google map</title>
+		<meta charset="utf-8">
+		<script src="scripts/jq321min.js"></script>
+		<script src="scripts/googleMap.js"></script>
+		<link	rel="stylesheet" href="styles/googleMap.css">
+		<script>
+			function setup(){
+				setupQueryMap();
+
+			}
+		</script>
+		
+	</head>
+	<body onload="setup()">
+	<div>
+		<input type="text" id="question"><input type="button" value="查詢" id="askMap" >
+	
+	</div>
+		
+<iframe
+	id="mapFrame"
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLFEZ4-GlMqvcZI7Wy2_RIko3_rGMGLkg&q=101" allowfullscreen>
+</iframe>
+
+	
+	
+	</body>
+
+
+
+
+
+
+</html>
