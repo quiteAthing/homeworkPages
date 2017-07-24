@@ -47,6 +47,10 @@ body{
 #mainContactHolder{
 	width:100%;
 	background:#AAEEEE;
+	overflow:scroll;
+	
+	height:440px;
+	
 }
 
 #profilePic{

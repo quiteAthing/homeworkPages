@@ -31,14 +31,16 @@ function setupContactInfoModel(){
 		var house=$(this).parent();
 		var name=house.find(".nxx_inputName")[0].value;
 		var tel=house.find(".nxx_inputTel")[0].value;
+		var email=house.find(".nxx_inputEmail")[0].value;
 		
-		if(name!==""&&tel!==""){
+		if(name!==""&&tel!==""&&email!==""){
 			house.find(".infoInput").hide();
 			house.find(".nxx_displayName")[0].innerHTML=name;
 			house.find(".nxx_displayTel")[0].innerHTML=tel;
+			house.find(".nxx_displayEmail")[0].innerHTML=email;
 			house.find(".infoDisplay").show();
 			$(this).hide();
-			alert("姓名: "+name+"\n電話: "+tel);
+			alert("  姓名: "+name+"\n  電話: "+tel+"\n  電郵:"+email);
 		}else{
 			alert("沒有輸入任何資料或資料不完整，請重新輸入資料");
 		}
